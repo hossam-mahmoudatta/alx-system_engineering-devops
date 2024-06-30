@@ -1,11 +1,5 @@
-# Installs flask v2.1.0 using pip3
+#!/usr/bin/env bash
+# Uses a bash script that uses ssh to connect
+# 52.91.149.126 is the ip of the server on alx_africa
 
-# package { 'flask':
-#   ensure   => '2.1.0',
-#   provider => 'pip3'
-# }
-
-exec { 'install_flask':
-  command => '/usr/bin/pip3 install flask==2.1.0',
-  path    => ['/usr/bin']
-}
+ssh-keygen -f school -N betty -t rsa -b 4096 
