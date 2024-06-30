@@ -1,8 +1,7 @@
-# Creates a file in /tmp/school
+# creates a script that kills
+# The process named killmenow
 
-file { '/tmp/school':
-  mode    => '0744',
-  owner   => 'www-data',
-  group   => 'www-data',
-  content => 'I love Puppet'
+exec { 'pkill':
+  command    => 'pkill killmenow',
+  provider   => 'shell'
 }
