@@ -1,5 +1,4 @@
-#!/usr/bin/pup
-# Creates a file in /tmp/school
+# Installs flask v2.1.0 using pip3
 
 package { 'flask':
   ensure   => '2.1.0',
