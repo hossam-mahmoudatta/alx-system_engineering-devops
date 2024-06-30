@@ -2,4 +2,4 @@
 # Uses a bash script that uses ssh to connect
 # 52.91.149.126 is the ip of the server on alx_africa
 
-ssh -i ~/.ssh/id_rsa ubuntu@52.91.149.126
+ssh -i ~/.ssh/school ubuntu@52.91.149.126
