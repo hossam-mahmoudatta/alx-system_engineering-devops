@@ -1,2 +1,2 @@
 #!/bin/bash
-Read Me File
+Read Me File for the Configuration Management System
