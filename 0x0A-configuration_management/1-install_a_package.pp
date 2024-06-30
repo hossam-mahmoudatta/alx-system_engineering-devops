@@ -1,8 +1,6 @@
 # Creates a file in /tmp/school
 
-file { '/tmp/school':
-  mode    => '0744',
-  owner   => 'www-data',
-  group   => 'www-data',
-  content => 'I love Puppet'
+package { 'flask':
+  ensure   => '2.1.0',
+  provider => 'pip3'
 }
