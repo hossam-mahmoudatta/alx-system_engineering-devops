@@ -1,8 +1,4 @@
-# Creates a file in /tmp/school
+#!/usr/bin/env bash
+# Uses a bash script that uses ssh to connect
 
-file { '/tmp/school':
-  mode    => '0744',
-  owner   => 'www-data',
-  group   => 'www-data',
-  content => 'I love Puppet'
-}
+ssh -i ~/.ssh/school ubuntu@52.91.149.126
