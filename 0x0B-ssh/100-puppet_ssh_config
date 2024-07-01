@@ -1,7 +1,15 @@
-# creates a script that kills
-# The process named killmenow
+# configs ssh using Puppet
 
-exec { 'kill killmenow process':
-  command => 'pkill killmenow',
-  path    => '/usr/bin/:/bin'
+include stdlib
+
+file_line { 'Turn off passwd auth':
+  path    => '/etc/ssh/ssh_config',
+  line    => '    PasswordAuthentication no',
+  replace => true,
+}
+
+file_line { 'Declare identity file':
+  path    => '/etc/ssh/ssh_config',
+  line    => '    IdentityFile ~/.ssh/school',
+  replace => true,
 }
