@@ -1,5 +1,4 @@
 # configs ssh using Puppet
-
 include stdlib
 
 file_line { 'Turn off passwd auth':
